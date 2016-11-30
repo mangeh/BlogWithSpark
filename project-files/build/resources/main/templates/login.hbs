@@ -1,0 +1,19 @@
+{{#partial "content"}}
+    <section>
+        <div class="container">
+            <div class="new-entry">
+                <form action="/auth/login" method="post">
+                    <input type="hidden" name="uri" value="{{uri}}">
+                    <label for="username">Username</label>
+                    <input type="text" name="username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                    <button class="button">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+{{/partial}}
+
+{{> base.hbs}}

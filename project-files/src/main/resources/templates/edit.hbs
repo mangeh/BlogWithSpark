@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+
+{{#partial "content"}}
+    <section>
+        <div class="container">
+            <div class="new-entry">
+                <h2>Edit entry</h2>
+                <form action="/{{entry.slug}}/edit" method="post">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" value="{{entry.title}}"><br>
+                    <label for="body">Entry</label>
+                    <textarea rows="5" name="body">{{entry.body}}</textarea>
+                    <input type="submit" value="Update Entry" class="button">
+                    <a href="#" class="button button-secondary">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+{{/partial}}
+{{> base.hbs}}
